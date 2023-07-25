@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         Swagger Auto Auth 0.2
+// @name         Swagger Auto Auth 0.1
 // @namespace    http://tampermonkey.net/
-// @version      0.2
+// @version      0.1
 // @description  Automatically retrieve auth token and apply to Swagger UI
 // @match        https://localhost:5000/swagger/*
 // @grant        GM_xmlhttpRequest
