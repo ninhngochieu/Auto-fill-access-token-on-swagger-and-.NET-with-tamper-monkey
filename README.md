@@ -1,8 +1,8 @@
-Here is a README for your script:
+Sure! Here is the updated README with the request and response samples:
 
 # Swagger Auto Auth 0.1
 
-This is a Tampermonkey userscript that automatically retrieves an authentication token and applies it to Swagger UI. It is designed to work with the Swagger UI hosted at `https://localhost/swagger/*`.
+This is a Tampermonkey userscript that automatically retrieves an authentication token and applies it to Swagger UI. It is designed to work with the Swagger UI hosted at `https://localhost:5001/swagger/*`.
 
 ## Usage
 
@@ -16,6 +16,33 @@ This is a Tampermonkey userscript that automatically retrieves an authentication
 The script uses the `GM_xmlhttpRequest` function provided by Tampermonkey to make a POST request to the authentication API endpoint specified in `authUrl`, with the parameters specified in `authParams`. The response is expected to contain a JSON object with an `accessToken` property.
 
 The script then uses various DOM manipulation techniques to open the authorization modal, fill in the token, and close the modal.
+
+### Request Sample
+
+Here is a sample request to retrieve an authentication token:
+
+```json
+{
+  "password": "Your password here!",
+  "userName": "Your username here!"
+}
+```
+
+### Response Sample
+
+Here is a sample response containing an authentication token:
+
+```json
+{
+    "value": {
+      "accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5,
+        "refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5,
+        "expireInMinute": 120
+    },
+    "statusCode": 200,
+    "contentType": null
+}
+```
 
 ## Notes
 
