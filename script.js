@@ -12,16 +12,6 @@
     'use strict';
 
     // Replace with your authentication API endpoint where you get access token.
-    // Example response
-    //{
-    //"value": {
-      //  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOiIyZWMwMGU1NS0xZTFkLTRkNDktYmUyNS04YzVlMzY1MjZhNjQiLCJVc2VyTmFtZSI6InRhbkB0ZXN0LmNvbSIsInVuaXF1ZV9uYW1lIjoidGFuQHRlc3QuY29tIiwicm9sZSI6WyJBZG1pbmlzdHJhdG9yIiwiUXXhuqNuIFRy4buLIEjhu4cgVGjhu5FuZyJdLCJuYmYiOjE2OTAzMDEwNDksImV4cCI6MTY5MDMwODI0OSwiaWF0IjoxNjkwMzAxMDQ5LCJpc3MiOiJodHRwczovL2J3cy1kZXYtYXBwIiwiYXVkIjoiYml3YXNlIn0.g0MbT7b8Xm8wNb1yV_wv0hXS2AN_hYTiqJkHKWC9_m4",
-        //"refreshToken": "EKIrVnRI+RGJQQPwQEj+rX5hHLbYaMmdgJGRxm+BMEY=",
-        //"expireInMinute": 120
-    //},
-    //"statusCode": 200,
-    //"contentType": null
-    //}
     const authUrl = 'https://localhost:5000/....';
 
     // Replace with your authentication API with pre-define body parameters
