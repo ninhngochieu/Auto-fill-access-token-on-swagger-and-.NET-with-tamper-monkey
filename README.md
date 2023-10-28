@@ -1,5 +1,3 @@
-Sure! Here is the updated README with the request and response samples:
-
 # Swagger Auto Auth 0.1
 
 This is a Tampermonkey userscript that automatically retrieves an authentication token and applies it to Swagger UI. It is designed to work with the Swagger UI hosted at `https://localhost:5001/swagger/*`.
